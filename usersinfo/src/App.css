@@ -1,0 +1,63 @@
+#adduser {
+  float: right;
+    width: 10%;
+    margin-right: 10%;
+    background-color:silver;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#edit{
+  background-color: #4CAF50;
+  border-radius: 8px;
+  margin-left: 10%;
+}
+
+#del{
+  background-color: #f44336;
+  border-radius: 8px;
+  margin-left: 2%;
+}
+
+#view{
+  background-color: #008CBA;
+  border-radius: 8px;
+  margin-left: 2%;
+}
+
+div h1 {
+  text-align: center;
+}
+
+#user {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 7%;
+}
+
+#user td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#user tr:nth-child(even){background-color: #f2f2f2;}
+
+#user tr:hover {background-color: #ddd;}
+
+#user th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
