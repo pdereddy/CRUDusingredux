@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { usersAction ,singleUserInfo,deleteUser} from '../com.org.redux/actions/usersAction';
+import { usersAction ,singleUserInfo,deleteUser} from '../redux/actions/usersAction';
 import '../App.css';
 import AddEditUser from './AddEditUser';
+import {
+    BrowserRouter as Router,
+    Link,
+    Routes,
+    Route
+  } from 'react-router-dom'
 
 function Users({usersAction,usersInformation,singleUserInfo,user,deleteUser}) {
     useEffect (() =>{
@@ -38,7 +44,6 @@ function Users({usersAction,usersInformation,singleUserInfo,user,deleteUser}) {
     return (
         <div>
             <div>
-                <h1>USERS INFORMATION</h1>
                 <button id="adduser"  data-toggle="modal" data-target="#exampleModalCenter">Add User</button>
             </div>
             <div>
@@ -60,7 +65,7 @@ function Users({usersAction,usersInformation,singleUserInfo,user,deleteUser}) {
 
 <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered" role="document">
-    <AddEditUser userData={user}/>
+      <AddEditUser userData={user}/>
   </div>
 </div>
             </div>
